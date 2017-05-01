@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block userinfo %}class="active"{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row thumbnail center col-sm-12">
+        <div class="col-sm-12">
+            <h1 class="text-center" style="margin-bottom: 30px">个人中心</h1>
+        </div>
+
+        <ul class="nav nav-tabs nav-justified" id="myTabs">
+            <li class="active"><a href="#userHome" >个人中心</a></li>
+            <li><a href="#editInfo">信息修改</a></li>
+            <li><a href="#editPassword">密码修改</a></li>
+            <li><a href="#orderManager">订单管理</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="userHome">个人中心</div>
+            <div role="tabpanel" class="tab-pane" id="editInfo">信息修改</div>
+            <div role="tabpanel" class="tab-pane" id="editPassword">密码修改</div>
+            <div role="tabpanel" class="tab-pane" id="orderManager">订单管理</div>
+        </div>
+    </div>
+</div>
+ <style>
+        .row{
+            margin-left: 20px;
+            margin-right: 20px;;
+        }
+        .line-center{
+            line-height:50px;
+            text-align: center;
+        }
+        .row input{
+            width: 50px;
+        }
+        .list-group-item:hover{
+            background: #27ae60;
+
+        }
+        .list-group-item div:first-child:hover{
+
+            cursor: pointer;
+        }
+        th{
+            text-align: right;
+            width: 10%;;
+            padding: 10px;
+        }
+        td{
+            text-align: left;
+            width: 30%;;
+            padding: 10px;
+        }
+        .table th{
+            text-align: center;
+        }
+        .table td{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function myClick(n){
+            location.href = "OrderInfo.html";
+        }
+        function btnClick(){
+            alert("btn");
+            return false;
+        }
+        $(function(){
+
+        })
+    </script>
+    <script>
+        $(function(){
+            $('#myTabs a').click(function (e) {
+
+                $(this).tab('show')
+            });
+        })
+    </script>
+{% endblock %}
