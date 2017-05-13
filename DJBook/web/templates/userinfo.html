@@ -13,15 +13,133 @@
             <li class="active"><a href="#userHome" >个人中心</a></li>
             <li><a href="#editInfo">信息修改</a></li>
             <li><a href="#editPassword">密码修改</a></li>
-            <li><a href="#orderManager">订单管理</a></li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="userHome">个人中心</div>
-            <div role="tabpanel" class="tab-pane" id="editInfo">信息修改</div>
-            <div role="tabpanel" class="tab-pane" id="editPassword">密码修改</div>
-            <div role="tabpanel" class="tab-pane" id="orderManager">订单管理</div>
+            <div role="tabpanel" class="tab-pane active" id="userHome">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>城市</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>用户名</td>
+                        <td>{{ user.username }}</td>
+                    </tr>
+                    <tr>
+                        <td>性别</td>
+                        <td>{{ user.sex }}</td>
+                    </tr>
+                    <tr>
+                        <td>年龄</td>
+                        <td>{{ user.age }}</td>
+                    </tr>
+                    <tr>
+                        <td>电话</td>
+                        <td>{{ user.phone }}</td>
+                    </tr>
+                    <tr>
+                        <td>邮箱</td>
+                        <td>{{ user.email }}</td>
+                    </tr>
+                    <tr>
+                        <td>城市</td>
+                        <td>{{ user.address.city.city }}</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td>{{ user.address.address }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="editInfo">
+                <form action="/userinfo/" method="POST" class="form-horizontal caption">
+                {% csrf_token %}
+                <div class="form-group  col-center-block">
+                    <label for="name" class="col-sm-3 control-label">用户名</label>
+                    <div class="col-sm-8">
+                        <input type="text" style="width:150px" class="form-control" id = "name" name="name" placeholder="{{ user.username }}" value={{ user.username }}>
+                    </div>
+                </div>
+
+                <div class="form-group  col-center-block">
+                    <label for="name" class="col-sm-3 control-label">性别</label>
+                    <div class="col-sm-8">
+                        <input type="text" style="width:150px" class="form-control" id = "sex" name="sex" placeholder="{{ user.sex }}" value={{ user.sex }}>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="col-sm-3 control-label">电话</label>
+                    <div class="col-sm-8">
+                        <input type="tel" style="width:150px" class="form-control" id="phone" name="phone" placeholder="{{ user.phone }}" value={{ user.phone }}>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="age" class="col-sm-3 control-label">年龄</label>
+                    <div class="col-sm-8">
+                        <input type="tel" style="width:150px" class="form-control" id="age" name="age" placeholder="{{ user.age }}" value={{ user.age }}>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city" class="col-sm-3 control-label">城市</label>
+                    <div class="col-sm-8">
+                        <input type="text" style="width:150px" class="form-control" id="city" name="city" placeholder="{{ user.address.city.city }}" value={{ user.address.city.city }}>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="col-sm-3 control-label">地址</label>
+                    <div class="col-sm-8">
+                        <input type="text" style="width:250px" class="form-control" id="address" name="address" placeholder="{{ user.address.address }}" value={{ user.address.address }}>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">邮箱</label>
+                    <div class="col-sm-8">
+                        <input type="email" style="width:250px" class="form-control" id="email" name="email" placeholder="{{ user.email }}" value={{ user.email }}>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-5">
+                        <button type="submit" class="btn btn-success btn-block">修改</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="editPassword">
+                <form action="/userinfo/" method="POST" class="form-horizontal caption">
+                    {% csrf_token %}
+                <div class="form-group">
+                    <label for="old_password" class="col-sm-3 control-label">旧密码</label>
+                    <div class="col-sm-8">
+                        <input type="password"  style="width:150px" class="form-control" id="old_password"  name="old_password" placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="new_password" class="col-sm-3 control-label">新密码</label>
+                    <div class="col-sm-8">
+                        <input type="password"  style="width:150px" class="form-control" id="new_password"  name="new_password" placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="repassword" class="col-sm-3 control-label">确认密码</label>
+                    <div class="col-sm-8">
+                        <input type="password" style="width:150px" class="form-control" id="repassword" name="repassword" placeholder="确认密码">
+                    </div>
+                </div>
+                    <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-5">
+                        <button type="submit" class="btn btn-success btn-block">提交</button>
+                    </div>
+                    </div>
+                    <div class="top"></div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

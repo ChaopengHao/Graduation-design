@@ -1,0 +1,13 @@
+.row{
+     margin-left: 20px;
+     margin-right: 20px;;
+ }
+ .top{
+     height:150px;
+ }
+.col-center-block {
+     float: none;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }

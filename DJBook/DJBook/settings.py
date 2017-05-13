@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'DJ_HAO',
         'USER': 'root',
         'PASSWORD': '819363254',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
             "init_command": "SET foreign_key_checks = 0;",
@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/dev/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'UTC'
 
@@ -130,8 +130,9 @@ STATIC_URL = '/static/'
 
 
 
-LOGIN_REDIRECT_URL = '/home'
+LOGIN_REDIRECT_URL ='/'
 LOGIN_URL = '/login'
+LOGOUT_REDIRECT_URL = '/'
 
 
 

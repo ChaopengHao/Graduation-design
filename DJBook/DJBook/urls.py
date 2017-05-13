@@ -21,8 +21,11 @@ from web import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home),
-    url(r'^bookinfo/', views.book_info),
-    url(r'^login/', views.login),
+    url(r'^home/', views.home),
+    url(r'^index_change/', views.index_change),
+    url(r'^bookinfo/(?P<pk>\d+)/$', views.book_info),
+    url(r'^login/', views.user_login),
+    url(r'^logout/', views.user_logout),
     url(r'^register/', views.register),
     url(r'^order/', views.order),
     url(r'^orderinfo/', views.order_info),
