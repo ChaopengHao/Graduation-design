@@ -4,8 +4,8 @@
 {% block content %}
 <div class="container">
     <div class="jumbotron">
-        <h1>图书商城</h1>
-        <p>...</p>
+        <h1>面向京东的电子商务推荐系统</h1>
+        <p>本系统由电子科技大学开发设计，所有数据均来自京东商城。</p>
         <p><a class="btn btn-primary btn-lg"  id="shuaxin" role="button">换一批</a></p>
         <input type="hidden" id="page" value="{{ page }}"/>
     </div>
@@ -14,7 +14,7 @@
         {% for book in books %}
         <div class="col-sm-4 col-md-3">
             <div class="thumbnail" >
-                <a href="BookInfo.html">
+                <a href="/bookinfo/{{book.id}}">
                     <img style="width: 100%; height: 200px; display: bloc" alt="100%x200" src={{book.img}} >
                 </a>
                 <div class="caption center ">
@@ -28,7 +28,6 @@
 
         <script>
       $('#shuaxin').click(function(){
-          debugger;
           var page = $('#page').val();
           var data = {};
           data.page = page;
@@ -45,6 +44,12 @@
             }
            });
       })
+      $(function(){
+            $('#myTabs a').click(function (e) {
+
+                $(this).tab('show')
+            });
+        })
     </script>
 
 </div>

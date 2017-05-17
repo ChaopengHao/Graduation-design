@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ff6afdd-61a3-495b-ad66-882aa944f04c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DJBook/web/migrations/0002_auto_20170511_1117.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DJBook/web/migrations/0003_auto_20170511_1155.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DJBook/web/static/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DJBook/web/static/mycss.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JingdongSpider/JingdongSpider/spiders/jdbook_spider.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JingdongSpider/JingdongSpider/spiders/scraped_data_utf8.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/DJBook/settings.py" afterPath="$PROJECT_DIR$/DJBook/DJBook/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/DJBook/urls.py" afterPath="$PROJECT_DIR$/DJBook/DJBook/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/DJBook/web/migrations/0001_initial.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/models.py" afterPath="$PROJECT_DIR$/DJBook/web/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/templates/base.html" afterPath="$PROJECT_DIR$/DJBook/web/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/templates/bookinfo.html" afterPath="$PROJECT_DIR$/DJBook/web/templates/bookinfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/templates/index.html" afterPath="$PROJECT_DIR$/DJBook/web/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/templates/login.html" afterPath="$PROJECT_DIR$/DJBook/web/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/templates/register.html" afterPath="$PROJECT_DIR$/DJBook/web/templates/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/templates/order.html" afterPath="$PROJECT_DIR$/DJBook/web/templates/order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/templates/userinfo.html" afterPath="$PROJECT_DIR$/DJBook/web/templates/userinfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DJBook/web/views.py" afterPath="$PROJECT_DIR$/DJBook/web/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JingdongSpider/JingdongSpider/items.py" afterPath="$PROJECT_DIR$/JingdongSpider/JingdongSpider/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JingdongSpider/JingdongSpider/pipelines.py" afterPath="$PROJECT_DIR$/JingdongSpider/JingdongSpider/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JingdongSpider/JingdongSpider/settings.py" afterPath="$PROJECT_DIR$/JingdongSpider/JingdongSpider/settings.py" />
     </list>
     <ignored path="Graduation-design.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,12 +31,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DJBook/web/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
+            <state relative-caret-position="105">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DJBook/web/templates/order.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="101" selection-start-line="26" selection-start-column="101" selection-end-line="26" selection-end-column="101" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DJBook/web/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="91" selection-start-line="5" selection-start-column="91" selection-end-line="5" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DJBook/web/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="85" column="9" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="12" />
+              <folding>
+                <element signature="e#469#508#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,9 +78,21 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DJBook/DJBook/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="480">
+              <caret line="35" column="23" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DJBook/web/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="168" column="48" selection-start-line="168" selection-start-column="48" selection-end-line="168" selection-end-column="48" />
+              <folding>
+                <element signature="e#14#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,21 +100,9 @@
       <file leaf-file-name="bookinfo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DJBook/web/templates/bookinfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DJBook/web/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1635">
-              <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="73" />
-              <folding>
-                <element signature="e#14#49#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -118,33 +139,33 @@
         <option value="$PROJECT_DIR$/DJBook/DJBook/web/templates/register.html" />
         <option value="$PROJECT_DIR$/DJBook/DJBook/web/models.py" />
         <option value="$PROJECT_DIR$/DJBook/web/templates/cart.html" />
-        <option value="$PROJECT_DIR$/DJBook/web/templates/order.html" />
         <option value="$PROJECT_DIR$/DJBook/web/static/mycss.css" />
         <option value="$PROJECT_DIR$/DJBook/web/templates/login.html" />
         <option value="$PROJECT_DIR$/DJBook/DJBook/settings.py" />
         <option value="$PROJECT_DIR$/DJBook/web/templates/register.html" />
-        <option value="$PROJECT_DIR$/DJBook/web/templates/userinfo.html" />
         <option value="$PROJECT_DIR$/JingdongSpider/JingdongSpider/spiders/items.json" />
         <option value="$PROJECT_DIR$/JingdongSpider/JingdongSpider/spiders/item.json" />
         <option value="$PROJECT_DIR$/JingdongSpider/JingdongSpider/items.py" />
-        <option value="$PROJECT_DIR$/DJBook/web/models.py" />
         <option value="$PROJECT_DIR$/JingdongSpider/JingdongSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/JingdongSpider/JingdongSpider/spiders/jdbook_spider.py" />
         <option value="$PROJECT_DIR$/JingdongSpider/JingdongSpider/spiders/scraped_data_utf8.json" />
         <option value="$PROJECT_DIR$/JingdongSpider/JingdongSpider/settings.py" />
-        <option value="$PROJECT_DIR$/DJBook/web/templates/bookinfo.html" />
+        <option value="$PROJECT_DIR$/DJBook/web/models.py" />
+        <option value="$PROJECT_DIR$/DJBook/web/templates/userinfo.html" />
         <option value="$PROJECT_DIR$/DJBook/web/templates/base.html" />
+        <option value="$PROJECT_DIR$/DJBook/web/templates/bookinfo.html" />
         <option value="$PROJECT_DIR$/DJBook/DJBook/urls.py" />
         <option value="$PROJECT_DIR$/DJBook/web/views.py" />
+        <option value="$PROJECT_DIR$/DJBook/web/templates/order.html" />
         <option value="$PROJECT_DIR$/DJBook/web/templates/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="18" />
+    <option name="x" value="35" />
+    <option name="y" value="39" />
     <option name="width" value="1323" />
-    <option name="height" value="750" />
+    <option name="height" value="729" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -171,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,6 +360,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -509,13 +530,21 @@
       <option name="presentableId" value="Default" />
       <updated>1491391020593</updated>
     </task>
+    <task id="LOCAL-00001" summary="完成核心功能">
+      <created>1494675803176</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1494675803176</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="18" width="1323" height="750" extended-state="6" />
+    <frame x="35" y="39" width="1323" height="729" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25134513" sideWeight="0.4918033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25134513" sideWeight="0.4918033" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.50269026" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -564,6 +593,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完成核心功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成核心功能" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -577,23 +610,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DJBook/web/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#469#508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DJBook/web/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DJBook/web/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -832,20 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/orderinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/userinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="125" column="114" selection-start-line="125" selection-start-column="114" selection-end-line="125" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DJBook/web/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -853,34 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JingdongSpider/JingdongSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JingdongSpider/JingdongSpider/spiders/scraped_data_utf8.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="211" selection-start-line="14" selection-start-column="204" selection-end-line="14" selection-end-column="211" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JingdongSpider/JingdongSpider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DJBook/web/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="77" column="7" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="7" />
-          <folding>
-            <element signature="e#469#508#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,52 +876,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DJBook/web/static/js/jquery-1.11.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/userinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/orderinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JingdongSpider/JingdongSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JingdongSpider/JingdongSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="21" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="21" />
+          <folding>
+            <element signature="e#192#218#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="91" selection-start-line="5" selection-start-column="91" selection-end-line="5" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DJBook/web/templates/bookinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DJBook/DJBook/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
+        <state relative-caret-position="150">
+          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DJBook/web/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="73" />
+        <state relative-caret-position="580">
+          <caret line="168" column="48" selection-start-line="168" selection-start-column="48" selection-end-line="168" selection-end-column="48" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DJBook/web/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="85" column="9" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="12" />
+          <folding>
+            <element signature="e#469#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DJBook/DJBook/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="101" selection-start-line="26" selection-start-column="101" selection-end-line="26" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DJBook/web/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

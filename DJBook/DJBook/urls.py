@@ -27,8 +27,11 @@ urlpatterns = [
     url(r'^login/', views.user_login),
     url(r'^logout/', views.user_logout),
     url(r'^register/', views.register),
+    url(r'^order1/(?P<pk>\d+)/$', views.order),
     url(r'^order/', views.order),
     url(r'^orderinfo/', views.order_info),
     url(r'^cart/', views.cart),
     url(r'^userinfo/', views.user_info),
+    url(r'^order/', views.order),
+    url(r'^order_delete/(?P<pk>\d+)/$', views.order_delete),
 ]

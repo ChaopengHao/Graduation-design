@@ -83,8 +83,6 @@ class JDBookItem(models.Model):
 
 class Order(models.Model):
     id = models.AutoField(primary_key=True)
-    number = models.IntegerField()
-    total_price = models.CharField(max_length=25)
     jd_goods = models.ForeignKey(JDBookItem, models.DO_NOTHING)
     user = models.ForeignKey('User', models.DO_NOTHING)
 

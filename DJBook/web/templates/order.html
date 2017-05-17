@@ -6,79 +6,29 @@
 <div class="container">
     <div class="row thumbnail center">
         <div class="col-sm-12">
-            <h1 class="text-center" style="margin-bottom: 30px">我的订单</h1>
+            <h1 class="text-center" style="margin-bottom: 30px">我的书单</h1>
         </div>
         <div class="col-sm-12 thumbnail">
             <div class="col-sm-3 line-center">订单编号</div>
-            <div class="col-sm-2 line-center">订单状态</div>
-            <div class="col-sm-2 line-center">商品数量 </div>
-            <div class="col-sm-2 line-center">订单总价</div>
+            <div class="col-sm-2 line-center">图书名称</div>
+            <div class="col-sm-2 line-center">图书数量</div>
+            <div class="col-sm-2 line-center">图书价格</div>
             <div class="col-sm-3 line-center">操作</div>
         </div>
         <div class="list-group">
-            <div class="col-sm-12  list-group-item" >
-                <div class="col-sm-3 line-center" onclick="myClick(1)">ahiudsfhjk-23423-23asd-12</div>
-                <div class="col-sm-2 line-center">未付款</div>
-                <div class="col-sm-2 line-center">12 </div>
-                <div class="col-sm-2 line-center">1231.00元</div>
-                <div class="col-sm-3 line-center">
-                    <button class="btn btn-danger">删除订单</button>
-                    <button class="btn btn-success">提交订单</button>
-
-                </div>
-            </div>
-            <div class="col-sm-12  list-group-item" >
-                <div class="col-sm-3 line-center" onclick="myClick(2)">ahiudsfhjk-23423-23asd-12</div>
-                <div class="col-sm-2 line-center">未付款</div>
-                <div class="col-sm-2 line-center">12 </div>
-                <div class="col-sm-2 line-center">1231.00元</div>
-                <div class="col-sm-3 line-center">
-                    <button class="btn btn-danger">删除订单</button>
-                    <button class="btn btn-success">提交订单</button>
-
-                </div>
-            </div>
-            <div class="col-sm-12  list-group-item" >
-                <div class="col-sm-3 line-center" onclick="myClick(3)">ahiudsfhjk-23423-23asd-12</div>
-                <div class="col-sm-2 line-center">未付款</div>
-                <div class="col-sm-2 line-center">12 </div>
-                <div class="col-sm-2 line-center">1231.00元</div>
-                <div class="col-sm-3 line-center">
-                    <button class="btn btn-danger">删除订单</button>
-                    <button class="btn btn-success">提交订单</button>
-
-                </div>
-            </div>
-            <div class="col-sm-12  list-group-item" >
-                <div class="col-sm-3 line-center" onclick="myClick(4)">ahiudsfhjk-23423-23asd-12</div>
-                <div class="col-sm-2 line-center">未付款</div>
-                <div class="col-sm-2 line-center">12 </div>
-                <div class="col-sm-2 line-center">1231.00元</div>
-                <div class="col-sm-3 line-center">
-                    <button class="btn btn-danger">删除订单</button>
-                    <button class="btn btn-success">提交订单</button>
-                </div>
-            </div>
+            {% for order in orders %}
              <div class="col-sm-12  list-group-item" >
-                <div class="col-sm-3 line-center" onclick="myClick(4)">ahiudsfhjk-23423-23asd-12</div>
-                <div class="col-sm-2 line-center">未付款</div>
-                <div class="col-sm-2 line-center">12 </div>
-                <div class="col-sm-2 line-center">1231.00元</div>
+                <div class="col-sm-3 line-center" onclick="myClick(4)">{{order.id}}</div>
+                <div class="col-sm-2 line-center">{{order.jd_goods.title}} </div>
+                <div class="col-sm-2 line-center">1 </div>
+                <div class="col-sm-2 line-center">{{order.jd_goods.price}}</div>
                 <div class="col-sm-3 line-center">
-                    <button class="btn btn-danger">删除订单</button>
-                    <button class="btn btn-success">提交订单</button>
+                    <a class="btn btn-primary btn-block" role="button" href={{order.jd_goods.url}}>提交书单</a>
+                    <a class="btn btn-default btn-block" role="button" href="/order_delete/{{order.id}}">删除书单</a>
                 </div>
-            </div>
-             <div class="col-sm-12  list-group-item" >
-                <div class="col-sm-3 line-center" onclick="myClick(4)">ahiudsfhjk-23423-23asd-12</div>
-                <div class="col-sm-2 line-center">未付款</div>
-                <div class="col-sm-2 line-center">12 </div>
-                <div class="col-sm-2 line-center">1231.00元</div>
-                <div class="col-sm-3 line-center">
-                    <button class="btn btn-danger">删除订单</button>
-                    <button class="btn btn-success">提交订单</button>
-                </div>
-            </div>
+             </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
        <style>

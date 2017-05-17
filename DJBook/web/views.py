@@ -1,6 +1,6 @@
 #coding=utf-8
 from django.shortcuts import render
-from models import User, Address, City, JDBookItem
+from models import User, Address, City, JDBookItem, Order
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
@@ -10,9 +10,9 @@ from django.http import HttpResponseRedirect
 
 def home(request):
     if request.user.is_authenticated() :
-        print request.user
-        print "nihao"
-        context = {}
+        books = JDBookItem.objects.all()[:12]
+        page = 1
+        context = {"books": books, "page": page}
         return render(request, 'index.html', context)
     else:
         books = JDBookItem.objects.all()[:12]
@@ -22,6 +22,7 @@ def home(request):
 
 
 def book_info(request, pk):
+    print pk
     book = JDBookItem.objects.filter(id=pk)[0]
     print book
     context ={"book":book}
@@ -61,8 +62,20 @@ def user_logout(request):
 
 
 @login_required(login_url="/login/")
-def order(request):
-    return render(request, 'order.html')
+def order(request, pk=0):
+    print "order"
+    print pk
+    if pk != 0:
+        print pk
+        book = JDBookItem.objects.filter(id=pk)[0]
+        new_user = User.objects.filter(username=request.user)[0]
+        new_order = Order(jd_goods=book, user=new_user)
+        new_order.save()
+        print 'baocun'
+    new_user = User.objects.filter(username=request.user)[0]
+    orders = Order.objects.filter(user=new_user)
+    context = {"orders":orders}
+    return render(request, 'order.html',context)
 
 
 @login_required(login_url="/login/")
@@ -139,3 +152,18 @@ def index_change(request):
         page += 1
         context = {"books": books, "page":page}
         return render(request, 'index.html', context)
+
+
+def order_add(request,pk):
+    book = JDBookItem.objects.filter(id=pk)[0]
+    new_user = User.objects.filter(username=request.user)[0]
+    new_order = Order(jd_goods=book, user=new_user)
+    new_order.save()
+    return render(request, 'orderinfo.html')
+
+def order_delete(request,pk):
+    Order.objects.filter(id =pk).delete()
+    new_user = User.objects.filter(username=request.user)[0]
+    orders = Order.objects.filter(user=new_user)
+    context = {"orders":orders}
+    return render(request, 'order.html',context)
